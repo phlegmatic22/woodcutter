@@ -19,7 +19,7 @@ function main() {
         robot.moveMouse(tree.x, tree.y);
         robot.mouseClick();
         // wait for walking and chopping to complete
-        sleep(8000);
+        sleep(12000);
 
         dropLogs();
     }
@@ -58,7 +58,8 @@ function findTree() {
 
     // make an array that contains colors of the trees we want to click on.
     // I'm targeting the brown colors of the trunks.
-    var tree_colors = ["5b462a", "60492c", "6a5130", "705634", "6d5432", "574328"];
+    var tree_colors = ["5b462a", "60492c", "6a5130", "705634", "6d5432", "574328", "110c05",
+                         "453019", "402e17","3d2b16", "110c05"];
 
     // sample up to 500 random pixels inside our screenshot until we find one that matches
     // a tree color.
